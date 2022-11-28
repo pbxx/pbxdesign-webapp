@@ -46,6 +46,13 @@ const count = ref(0)
 h2 {
   font-weight: 300;
   margin: 0;
-  text-shadow: 0 0 4px #120f0f94;
+  text-shadow: 0 0 15em #300e8c00;
+}
+
+@media (prefers-color-scheme: light) {
+  h2 {
+    text-shadow: 0 0 4px #120f0f00;
+  }
+
 }
 </style>

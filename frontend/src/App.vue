@@ -5,20 +5,32 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <img src="./assets/pbx.svg" class="logo" alt="Vite logo" />
+  <div class="logoHolder">
   </div>
   <HelloWorld msg="website coming soon" />
 </template>
 
 <style scoped>
-.logo {
+
+.logoHolder {
+  width: 50vh;
   height: 50vh;
+  background-image: url(./assets/pbx-light.svg);
+  background-size: cover; 
   padding: 0px;
   will-change: filter;
-  filter: drop-shadow(0 0 1em #120f0f42);
+  transition-duration: 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #120f0f42);
+/*
+.logoHolder:hover {
+  filter: drop-shadow(0 0 5em #300e8c);
+}
+*/
+
+@media (prefers-color-scheme: light) {
+  .logoHolder {
+    background-image: url(./assets/pbx-light.svg);
+  }
+
 }
 </style>
