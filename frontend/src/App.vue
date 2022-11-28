@@ -13,13 +13,14 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 
 .logoHolder {
-  width: 50vh;
-  height: 50vh;
+  width: var(--desktop-logo-size);
+  height: var(--desktop-logo-size);
   background-image: url(./assets/pbx-light.svg);
   background-size: cover; 
   padding: 0px;
   will-change: filter;
   transition-duration: 300ms;
+  
 }
 /*
 .logoHolder:hover {
@@ -30,6 +31,14 @@ import HelloWorld from './components/HelloWorld.vue'
 @media (prefers-color-scheme: light) {
   .logoHolder {
     background-image: url(./assets/pbx-light.svg);
+  }
+
+}
+
+@media (max-width: 400px) {
+  .logoHolder {
+    width: var(--mobile-logo-size);
+    height: var(--mobile-logo-size);
   }
 
 }
