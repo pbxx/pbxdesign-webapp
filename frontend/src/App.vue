@@ -15,7 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
 .logoHolder {
   width: var(--desktop-logo-size);
   height: var(--desktop-logo-size);
-  background-image: url(./assets/pbx-light.svg);
+  background-image: url(./assets/pbx-mocha.svg);
   background-size: cover; 
   padding: 0px;
   will-change: filter;
@@ -30,7 +30,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 @media (prefers-color-scheme: light) {
   .logoHolder {
-    background-image: url(./assets/pbx-light.svg);
+    background-image: url(./assets/pbx-mocha.svg);
   }
 
 }
